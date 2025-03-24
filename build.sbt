@@ -1,4 +1,6 @@
 import laika.helium.Helium
+import laika.format.Markdown
+import laika.config.SyntaxHighlighting
 
 lazy val root = (project in file("."))
   .settings(
@@ -6,6 +8,7 @@ lazy val root = (project in file("."))
     version      := "0.1",
     scalaVersion := "3.6.1",
     laikaTheme   := theme,
+    laikaExtensions ++= Seq(Markdown.GitHubFlavor, SyntaxHighlighting),
     laikaConfig := LaikaConfig.defaults
       .withConfigValue(
         "laika.theme.fonts.body",
