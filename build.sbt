@@ -1,8 +1,11 @@
+import laika.helium.Helium
+
 lazy val root = (project in file("."))
   .settings(
     name         := "blog",
     version      := "0.1",
     scalaVersion := "3.6.1",
+    laikaTheme   := theme,
     laikaConfig := LaikaConfig.defaults
       .withConfigValue(
         "laika.theme.fonts.body",
@@ -18,3 +21,10 @@ lazy val root = (project in file("."))
       )
   )
   .enablePlugins(LaikaPlugin)
+
+lazy val theme = Helium.defaults.all
+  .metadata(
+    title = Some("Watson Dinh "),
+    language = Some("en")
+  )
+  .build

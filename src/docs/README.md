@@ -34,8 +34,6 @@ My primary expertise includes:
 
 ## Sample Code
 
-### Hello World in Scala
-
 ```scala
 
 import cats.effect.IO
