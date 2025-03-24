@@ -1,5 +1,21 @@
 # Watson Dinh
 
+## Hello, world
+
+```scala
+
+import cats.effect.IO
+
+object HelloWorld {
+  def main(args: Array[String]): IO[Unit] = {
+    for {
+      _ <- IO.println("Hello, World!")
+      _ <- IO.println("Welcome to my Scala blog!")
+    } yield ()
+  }
+}
+```
+
 ## About Me
 
 Hi! I'm Watson, a Scala Software Engineer with a passion for functional programming and clean code principles.
@@ -31,24 +47,6 @@ My primary expertise includes:
 - **Frameworks:** ZIO, Cats, Cats-Effect, FS2, Tapir, Akka, Pekko, Play Framework
 - **Frontend:** Laminar, Tyrian, Vue.js, React
 - **Databases:** PostgreSQL, MySQL, MariaDB, Couchbase, DB2
-
-## Sample Code
-
-### Hello World in Scala
-
-```scala
-
-import cats.effect.IO
-
-object HelloWorld {
-  def main(args: Array[String]): IO[Unit] = {
-    for {
-      _ <- IO.println("Hello, World!")
-      _ <- IO.println("Welcome to my Scala blog!")
-    } yield ()
-  }
-}
-```
 
 ## Get in Touch
 
